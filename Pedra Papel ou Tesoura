@@ -1,0 +1,31 @@
+import random
+
+opcoes = ["pedra", "papel", "tesoura"]
+vitorias = 0
+derrotas = 0
+
+print("🎮 Bem-vindo ao jogo Pedra, Papel ou Tesoura!")
+
+while True:
+    jogador = input("Escolha pedra, papel ou tesoura (ou 'sair' para encerrar): ").lower()
+
+    if jogador == "sair":
+        print("Obrigado por jogar! 👋")
+        print(f"Placar final: {vitorias} vitórias e {derrotas} derrotas.")
+        break
+
+    computador = random.choice(opcoes)
+    print("Computador escolheu:", computador)
+
+    if jogador == computador:
+        print("Empate!")
+    elif (jogador == "pedra" and computador == "tesoura") or \
+         (jogador == "papel" and computador == "pedra") or \
+         (jogador == "tesoura" and computador == "papel"):
+        print("Você venceu! 🎉")
+        vitorias += 1
+    else:
+        print("Você perdeu! 😢")
+        derrotas += 1
+
+    print(f"Placar: {vitorias} vitórias | {derrotas} derrotas\n")
