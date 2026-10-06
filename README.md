@@ -19,5 +19,5 @@ O resultado mostra se o jogador **venceu**, **empatou** ou **perdeu**, e o placa
 
 ## 👩‍💻 Autora
 **Daniela Lyra (MitsuyTiger)**  
-Estudante de Desenvolvimento de Sistemas — apaixonada por tecnologia e programação.
+Estudante de Engenharia de Software — apaixonada por tecnologia e programação.
 
